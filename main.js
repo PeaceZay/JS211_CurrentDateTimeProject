@@ -5,23 +5,26 @@
 //          PART ONE
 // ***************************
 // Write a JavaScript program to display the current day and time, start with:
-console.log(new Date)
-
-const displayDate = () => {
+// console.log(new Date)
+  console.log(new Date);
+const showDate = () => {
   const currentDate = new Date()
-
-  document.getElementById("display-element").innerHTML = currentDate;
 }
- 
 
 // Write a JavaScript program to convert a number to a string.
 
+let number = 697;
+let text = number.toString();
+console.log(text)
 
 
 // Write a JavaScript program to convert a string to the number.
 
-
-
+let aString = 'bob';
+let aNumber = parseInt(aString)
+console.log(aNumber)
+console.log(typeof(aString))
+console.log(typeof(aNumber))
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
   // * Boolean
   // * Null
@@ -30,10 +33,23 @@ const displayDate = () => {
   // * NaN
   // * String
   
+  let question4 = function(X) {
+    let answer = typeof(X);
 
-  
+    console.log("the type of", X, "is", answer);
+
+  }
+ question4("joe");
+ question4(3);
+ question4("3-1");
+ question4(false);
+ question4(null);
+ question4(undefined);
+ question4(question4);
+
+
 // Write a JavaScript program that adds 2 numbers together.
-
+ 
 
 
 // Write a JavaScript program that runs only when 2 things are true.
